@@ -1,5 +1,5 @@
 var cat_id = $("#ad_sub_cat_widget").attr("cat-id")
-var site_name = $("#site_name").attr("site-name")
+var site_name = $("#ad_sub_cat_widget").attr("site-name")
 document.getElementById("ad_sub_cat_widget").style.display = "none"; 
 
 
