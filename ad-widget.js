@@ -1,8 +1,9 @@
 var cat_id = $("#ad_sub_cat_widget").attr("cat-id")
+var site_name = $("#site_name").attr("site-name")
 document.getElementById("ad_sub_cat_widget").style.display = "none"; 
 
 
-function getSlider(cat_id){
+function getSlider(cat_id, site_name){
 var request = new XMLHttpRequest();
     function reqReadyStateChange() {
         if (request.readyState == 4) {
@@ -13,7 +14,8 @@ var request = new XMLHttpRequest();
         }
     }
     var body = cat_id;
-    request.open("GET", "http://localhost:8000/?"+body); // Ned to change on relise
+    var aditional = site_name;
+    request.open("GET", "http://localhost:8000/?"+body+"&"+aditional); // Ned to change on relise
     request.onreadystatechange = reqReadyStateChange;
     request.send();
 }
