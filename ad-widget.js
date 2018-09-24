@@ -22,7 +22,7 @@ var request = new XMLHttpRequest();
 
 $.getScript("https://alltay.github.io/blocks/jquery-migrate-1.2.1.min.js");
 $.getScript("https://alltay.github.io/blocks/slick.min.js"); // Need to change on relese
-getSlider(cat_id)
+getSlider(cat_id, site_name)
 
 setTimeout(function(){
     $.getScript("https://alltay.github.io/blocks/slider.js");// Need to change on relese
