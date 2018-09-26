@@ -15,7 +15,7 @@ var request = new XMLHttpRequest();
     }
     var body = cat_id;
     var aditional = site_name;
-    request.open("GET", "http://block.mrkrestiom.ru/?"+body+"&"+aditional); // Ned to change on relise
+    request.open("GET", "http://block.mrkrestiom.ru/?id="+body+"&site="+aditional); // Ned to change on relise
     request.onreadystatechange = reqReadyStateChange;
     request.send();
 }
