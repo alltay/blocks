@@ -2,6 +2,9 @@ body {
 	background-color: #640a01;
 	color:#F2D63E;
 }
+#ad_sub_cat_widget {
+    max-width: 800px;
+}
 .item-title{:50px;}
 a{
   text-decoration: underline;
