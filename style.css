@@ -1,0 +1,37 @@
+body {
+	background-color: #640a01;
+	color:#F2D63E;
+}
+.item-title{:50px;}
+a{
+  text-decoration: underline;
+}
+.slick-prev.slick-arrow {
+	background: url(https://alltay.github.io/blocks/left.png) no-repeat;
+	height: 85px;
+	width: 25px;
+    opacity: .7;
+}
+.slick-next.slick-arrow{
+	background: url(https://alltay.github.io/blocks/right.png) no-repeat;
+	height: 85px;
+	width: 25px;
+	opacity: .7;
+}
+.item_url, .item_url:hover {
+	color:white;
+}
+.button-buy,  .button-buy:hover{
+    background: url(https://www.mirkrestikom.ru/diz/mirkrestikom6/images/button-buy2.png) no-repeat;
+    line-height: 28px;
+    font-size: 12px;
+    padding: 5px 10px 7px 10px;
+    font-family: Verdana;
+    color: #000;
+    text-decoration: none;
+}
+.np.col-6 {
+    font-size: 12px;
+    padding-right: 3px !important;
+    padding-left: 3px !important;
+}
