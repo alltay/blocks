@@ -35,7 +35,7 @@ var request = new XMLHttpRequest();
 // Get js libs
 $.getScript("https://alltay.github.io/blocks/jquery-migrate-1.2.1.min.js");
 $.getScript("https://alltay.github.io/blocks/slick.min.js"); // Need to change on release
-getSlider(cat_id, site_name)
+getSlider(cat_id, site_name, widget)
 
 setTimeout(function(){
     $.getScript("https://alltay.github.io/blocks/slider.js");// Need to change on release
