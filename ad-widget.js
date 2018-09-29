@@ -44,5 +44,5 @@ setTimeout(function(){
 // Show widget with latensy
 setTimeout(function(){
     document.getElementById(widget).style.display = "block"; 
-}, 2500);
+}, 2000);
 
