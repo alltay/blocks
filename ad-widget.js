@@ -27,7 +27,7 @@ var request = new XMLHttpRequest();
             }
         }
     }
-    request.open("GET", "https://block.mirkrestikom.ru/?id=" + cat_id + "&site=" + site_name);
+    request.open("GET", "https://block.mirkrestikom.ru/widget/?id=" + cat_id + "&site=" + site_name);
     request.onreadystatechange = reqReadyStateChange;
     request.send();
 }
