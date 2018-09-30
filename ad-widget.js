@@ -6,20 +6,19 @@ $.getScript("https://alltay.github.io/blocks/slick.min.js"); // Need to change o
 if(document.getElementById('ad_sub_cat_widget')){
     var widget = 'ad_sub_cat_widget';
     var param = 'id';
-    getSlider(cat_id, site_name, widget)
+    getSlider(getParams(widget)[0], getParams(widget)[1], widget)
 }
 // Check if widget block exists in main category
 if(document.getElementById('ad_cat_widget')){
     var widget = 'ad_cat_widget';
     var param = 'm_id';
-    getParams(widget)
-    getSlider(cat_id, site_name, widget)
+    getSlider(getParams(widget)[0], getParams(widget)[1], widget)
 }
 // Check it widget exists on item page
 if(document.getElementById('ad_item_widget')){
     var widget = 'ad_item_widget';
     var param = 'i_id';
-    getSlider(cat_id, site_name, widget)
+    getSlider(getParams(widget)[0], getParams(widget)[1], widget)
 }
 
 // Get widget params
@@ -27,7 +26,7 @@ function getParams(widget){
     var cat_id = $("#" + widget).attr("cat-id");
     var site_name = $("#" + widget).attr("site-name");
     document.getElementById(widget).style.display = "none"; 
-    return cat_id, site_name
+    return [cat_id, site_name]
 }
 
 // Get widget body from back end
@@ -51,8 +50,9 @@ setTimeout(function(){
     $.getScript("https://alltay.github.io/blocks/slider.js");// Need to change on release
 }, 2000);
 
-// // Show widget with latensy
-// setTimeout(function(){
-//     document.getElementById(widget).style.display = "block"; 
-// }, 2000);
-
+// Show widgets with latensy
+setTimeout(function(){
+    document.getElementById('ad_sub_cat_widget').style.display = "block";
+    document.getElementById('ad_cat_widget').style.display = "block";
+    document.getElementById('item_widget').style.display = "block"; 
+}, 2000);
