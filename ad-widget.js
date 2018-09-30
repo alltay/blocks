@@ -1,14 +1,17 @@
 // Check if widget block exists in sub category
 if(document.getElementById('ad_sub_cat_widget')){
     var widget = 'ad_sub_cat_widget';
+    var param = 'id';
 }
 // Check if widget block exists in main category
 if(document.getElementById('ad_cat_widget')){
     var widget = 'ad_cat_widget';
+    var param = 'm_id';
 }
 // Check it widget exists on item page
 if(document.getElementById('ad_item_widget')){
     var widget = 'ad_item_widget';
+    var param = 'i_id';
 }
 
 // Get widget params
@@ -27,7 +30,7 @@ var request = new XMLHttpRequest();
             }
         }
     }
-    request.open("GET", "https://block.mirkrestikom.ru/widget/?id=" + cat_id + "&site=" + site_name);
+    request.open("GET", "https://block.mirkrestikom.ru/widget/?" + param + "=" + cat_id + "&site=" + site_name);
     request.onreadystatechange = reqReadyStateChange;
     request.send();
 }
