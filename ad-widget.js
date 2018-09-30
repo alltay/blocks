@@ -12,19 +12,23 @@ if(document.getElementById('ad_sub_cat_widget')){
 if(document.getElementById('ad_cat_widget')){
     var widget = 'ad_cat_widget';
     var param = 'm_id';
+    getParams(widget)
     getSlider(cat_id, site_name, widget)
 }
 // Check it widget exists on item page
 if(document.getElementById('ad_item_widget')){
     var widget = 'ad_item_widget';
     var param = 'i_id';
+    getParams(widget)
     getSlider(cat_id, site_name, widget)
 }
 
 // Get widget params
-var cat_id = $("#" + widget).attr("cat-id");
-var site_name = $("#" + widget).attr("site-name");
-document.getElementById(widget).style.display = "none"; 
+function getParams(widget){
+    var cat_id = $("#" + widget).attr("cat-id");
+    var site_name = $("#" + widget).attr("site-name");
+    document.getElementById(widget).style.display = "none"; 
+}
 
 // Get widget body from back end
 function getSlider(cat_id, site_name, widget){
