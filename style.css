@@ -4,7 +4,11 @@ body {
 #ad_sub_cat_widget {
     max-width: 700px;
 }
-.item-title{:50px;}
+.item-title{
+    height: 20px;
+    overflow: hidden;
+}
+}
 a{
   text-decoration: underline;
 }
