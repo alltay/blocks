@@ -1,17 +1,24 @@
+// Get js libs
+$.getScript("https://alltay.github.io/blocks/jquery-migrate-1.2.1.min.js");
+$.getScript("https://alltay.github.io/blocks/slick.min.js"); // Need to change on release
+
 // Check if widget block exists in sub category
 if(document.getElementById('ad_sub_cat_widget')){
     var widget = 'ad_sub_cat_widget';
     var param = 'id';
+    getSlider(cat_id, site_name, widget)
 }
 // Check if widget block exists in main category
 if(document.getElementById('ad_cat_widget')){
     var widget = 'ad_cat_widget';
     var param = 'm_id';
+    getSlider(cat_id, site_name, widget)
 }
 // Check it widget exists on item page
 if(document.getElementById('ad_item_widget')){
     var widget = 'ad_item_widget';
     var param = 'i_id';
+    getSlider(cat_id, site_name, widget)
 }
 
 // Get widget params
@@ -35,17 +42,13 @@ var request = new XMLHttpRequest();
     request.send();
 }
 
-// Get js libs
-$.getScript("https://alltay.github.io/blocks/jquery-migrate-1.2.1.min.js");
-$.getScript("https://alltay.github.io/blocks/slick.min.js"); // Need to change on release
-getSlider(cat_id, site_name, widget)
 
 setTimeout(function(){
     $.getScript("https://alltay.github.io/blocks/slider.js");// Need to change on release
 }, 2000);
 
-// Show widget with latensy
-setTimeout(function(){
-    document.getElementById(widget).style.display = "block"; 
-}, 2000);
+// // Show widget with latensy
+// setTimeout(function(){
+//     document.getElementById(widget).style.display = "block"; 
+// }, 2000);
 
