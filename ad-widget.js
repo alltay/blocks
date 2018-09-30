@@ -19,7 +19,6 @@ if(document.getElementById('ad_cat_widget')){
 if(document.getElementById('ad_item_widget')){
     var widget = 'ad_item_widget';
     var param = 'i_id';
-    getParams(widget)
     getSlider(cat_id, site_name, widget)
 }
 
@@ -28,6 +27,7 @@ function getParams(widget){
     var cat_id = $("#" + widget).attr("cat-id");
     var site_name = $("#" + widget).attr("site-name");
     document.getElementById(widget).style.display = "none"; 
+    return cat_id, site_name
 }
 
 // Get widget body from back end
