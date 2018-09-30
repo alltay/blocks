@@ -54,5 +54,5 @@ setTimeout(function(){
 setTimeout(function(){
     document.getElementById('ad_sub_cat_widget').style.display = "block";
     document.getElementById('ad_cat_widget').style.display = "block";
-    document.getElementById('item_widget').style.display = "block"; 
+    document.getElementById('ad_item_widget').style.display = "block"; 
 }, 2000);
