@@ -4,13 +4,10 @@ body {
 #ad_sub_cat_widget, #ad_cat_widget, #ad_item_widget {
     max-width: 700px;
 }
-.item-title{
+.ad-item-title{
     height: 32px;
     overflow: hidden;
 }
-}
-a{
-  text-decoration: underline;
 }
 .slick-prev.slick-arrow {
 	background: url(https://alltay.github.io/blocks/left.png) no-repeat;
@@ -24,10 +21,10 @@ a{
 	width: 25px;
 	opacity: .7;
 }
-.item_url, .item_url:hover {
+.ad-item_url, .ad-item_url:hover {
 	color:white;
 }
-.button-buy,  .button-buy:hover{
+.ad-button-buy,  .ad-button-buy:hover{
     background: url(https://www.mirkrestikom.ru/diz/mirkrestikom6/images/button-buy2.png) no-repeat;
     line-height: 28px;
     font-size: 12px;
