@@ -25,7 +25,7 @@ if(document.getElementById('ad_item_widget')){
 function getParams(widget){
     var cat_id = $("#" + widget).attr("cat-id");
     var site_name = $("#" + widget).attr("site-name");
-    document.getElementById(widget).style.display = "none"; 
+    // document.getElementById(widget).style.display = "none"; 
     return [cat_id, site_name]
 }
 
@@ -50,9 +50,10 @@ setTimeout(function(){
     $.getScript("https://alltay.github.io/blocks/slider.js");// Need to change on release
 }, 2000);
 
+
 // Show widgets with latensy
 setTimeout(function(){
     document.getElementById('ad_sub_cat_widget').style.display = "block";
     document.getElementById('ad_cat_widget').style.display = "block";
     document.getElementById('ad_item_widget').style.display = "block"; 
-}, 2500);
+}, 2000);
