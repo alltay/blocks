@@ -25,7 +25,7 @@ if(document.getElementById('ad_item_widget')){
 function getParams(widget){
     var cat_id = $("#" + widget).attr("cat-id");
     var site_name = $("#" + widget).attr("site-name");
-    // document.getElementById(widget).style.display = "none"; 
+    document.getElementById(widget).style.display = "none"; 
     return [cat_id, site_name]
 }
 
@@ -53,7 +53,19 @@ setTimeout(function(){
 
 // Show widgets with latensy
 setTimeout(function(){
-    document.getElementById('ad_sub_cat_widget').style.display = "block";
-    document.getElementById('ad_cat_widget').style.display = "block";
-    document.getElementById('ad_item_widget').style.display = "block"; 
+    try {
+      document.getElementById('ad_sub_cat_widget').style.display = "block";
+    } catch (err) {
+      Console.log("No sub_cat_widget")
+    }
+    try {
+      document.getElementById('ad_cat_widget').style.display = "block";
+    } catch (err) {
+      Console.log("No cat_widget")
+    }
+    try {
+      document.getElementById('ad_item_widget').style.display = "block";
+    } catch (err) {
+      Console.log("No item_widget")
+    }
 }, 2000);
