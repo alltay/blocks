@@ -62,4 +62,4 @@ setTimeout(function(){
     try {
       document.getElementById('ad_item_widget').style.display = "block";
     } catch (err) {}
-}, 2000);
+}, 3000);
