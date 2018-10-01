@@ -55,17 +55,11 @@ setTimeout(function(){
 setTimeout(function(){
     try {
       document.getElementById('ad_sub_cat_widget').style.display = "block";
-    } catch (err) {
-      Console.log("No sub_cat_widget")
-    }
+    } catch (err) {}
     try {
       document.getElementById('ad_cat_widget').style.display = "block";
-    } catch (err) {
-      Console.log("No cat_widget")
-    }
+    } catch (err) {}
     try {
       document.getElementById('ad_item_widget').style.display = "block";
-    } catch (err) {
-      Console.log("No item_widget")
-    }
+    } catch (err) {}
 }, 2000);
