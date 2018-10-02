@@ -48,7 +48,7 @@ var request = new XMLHttpRequest();
 
 setTimeout(function(){
     $.getScript("https://alltay.github.io/blocks/slider.js");// Need to change on release
-}, 2500);
+}, 2050);
 
 
 // Show widgets with latensy
