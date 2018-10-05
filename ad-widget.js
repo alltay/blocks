@@ -20,7 +20,7 @@ if(document.getElementById('ad_cat_widget')){
 if(document.getElementById('ad_item_widget')){
     var widget = 'ad_item_widget';
     var param = 'i_id';
-    var title = 'С этим товаром покупают';
+    var title = 'Похожие товары';
     getSlider(getParams(widget)[0], getParams(widget)[1], widget)
 }
 
