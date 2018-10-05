@@ -58,15 +58,16 @@ setTimeout(function(){
 setTimeout(function(){
     try {
       document.getElementById('ad_sub_cat_widget').style.display = "block";
+      document.getElementById("ad-head-title").innerHTML = title;
     } catch (err) {}
     try {
       document.getElementById('ad_cat_widget').style.display = "block";
+      document.getElementById("ad-head-title").innerHTML = title;
     } catch (err) {}
     try {
       document.getElementById('ad_item_widget').style.display = "block";
+      document.getElementById("ad-head-title").innerHTML = title;
     } catch (err) {}
 }, 2000);
  
 
-//Show widget title
-document.getElementById("ad-head-title").innerHTML = title;
