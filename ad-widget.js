@@ -6,18 +6,21 @@ $.getScript("https://alltay.github.io/blocks/slick.min.js"); // Need to change o
 if(document.getElementById('ad_sub_cat_widget')){
     var widget = 'ad_sub_cat_widget';
     var param = 'id';
+    var title = 'Популярные товары в категории'ж
     getSlider(getParams(widget)[0], getParams(widget)[1], widget)
 }
 // Check if widget block exists in main category
 if(document.getElementById('ad_cat_widget')){
     var widget = 'ad_cat_widget';
     var param = 'm_id';
+    var title = 'Популярные товары в категории'ж
     getSlider(getParams(widget)[0], getParams(widget)[1], widget)
 }
 // Check it widget exists on item page
 if(document.getElementById('ad_item_widget')){
     var widget = 'ad_item_widget';
     var param = 'i_id';
+    var title = 'С этим товаром покупают';
     getSlider(getParams(widget)[0], getParams(widget)[1], widget)
 }
 
@@ -63,3 +66,7 @@ setTimeout(function(){
       document.getElementById('ad_item_widget').style.display = "block";
     } catch (err) {}
 }, 2000);
+ 
+
+//Show widget title
+document.getElementById("ad-head-title").innerHTML = title;
