@@ -6,14 +6,14 @@ $.getScript("https://alltay.github.io/blocks/slick.min.js"); // Need to change o
 if(document.getElementById('ad_sub_cat_widget')){
     var widget = 'ad_sub_cat_widget';
     var param = 'id';
-    var title = 'Популярные товары в категории'ж
+    var title = 'Популярные товары в категории';
     getSlider(getParams(widget)[0], getParams(widget)[1], widget)
 }
 // Check if widget block exists in main category
 if(document.getElementById('ad_cat_widget')){
     var widget = 'ad_cat_widget';
     var param = 'm_id';
-    var title = 'Популярные товары в категории'ж
+    var title = 'Популярные товары в категории';
     getSlider(getParams(widget)[0], getParams(widget)[1], widget)
 }
 // Check it widget exists on item page
