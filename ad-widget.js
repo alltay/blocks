@@ -21,14 +21,13 @@ if(document.getElementById('ad_item_widget')){
     var widget = 'ad_item_widget';
     var param = 'i_id';
     var title = 'Похожие товары';
-    getSlider(getParams(widget)[0], getParams(widget)[1], widget)
+    getSlider(getParams(widget)[0], getParams(widget)[1], widget)  
 }
 
 // Get widget params
 function getParams(widget){
     var cat_id = $("#" + widget).attr("cat-id");
     var site_name = $("#" + widget).attr("site-name");
-    // document.getElementById(widget).style.display = "none"; 
     return [cat_id, site_name]
 }
 
@@ -40,6 +39,9 @@ var request = new XMLHttpRequest();
             var status = request.status;
             if (status == 200) {
                 document.getElementById(widget).innerHTML = request.responseText;
+                document.getElementById('ad-row-main').style.display = "none";
+                showWidget(title)
+                showArrows(widget)
             }
         }
     }
@@ -48,45 +50,18 @@ var request = new XMLHttpRequest();
     request.send();
 }
 
+// Show widgets with latency
+function showWidget(title){
+    setTimeout(function(){
+        document.getElementById("ad-head-title").innerHTML = title;
+        $.getScript("https://alltay.github.io/blocks/slider.js");
+        document.getElementById('ad-row-main').style.display = "block"; 
+    }, 300);
+}
 
-// Show widgets with latensy
-
-setTimeout(function(){
-    try {
-      document.getElementById("ad-head-title").innerHTML = title;
-    } catch (err) {}
-    try {
-      document.getElementById("ad-head-title").innerHTML = title;
-    } catch (err) {}
-    try {
-      document.getElementById("ad-head-title").innerHTML = title;
-    } catch (err) {}ы
-}, 200);
-
-
-setTimeout(function(){
-    try {
-      document.getElementById("ad-head-title").innerHTML = title;
-    } catch (err) {}
-    try {
-      document.getElementById("ad-head-title").innerHTML = title;
-    } catch (err) {}
-    try {
-      document.getElementById("ad-head-title").innerHTML = title;
-    } catch (err) {}
-    $.getScript("https://alltay.github.io/blocks/slider.js");// Need to change on release
-}, 2000);
-
-
-setTimeout(function(){
-    try {
-      $( "#ad_sub_cat_widget" ).css( "overflow", "unset" );
-    } catch (err) {}
-    try {
-      $( "#ad_cat_widget" ).css( "overflow", "unset" );
-    } catch (err) {}
-    try {
-      $( "#ad_item_widget" ).css( "overflow", "unset" );
-    } catch (err) {}
+function showArrows(widget){
+    setTimeout(function(){
+       $( "#" + widget ).css( "overflow", "unset" );
+    }, 700);
+}
     
-}, 2400);
