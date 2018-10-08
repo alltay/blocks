@@ -64,12 +64,12 @@ setTimeout(function(){
       document.getElementById('ad_item_widget').style.display = "block";
       document.getElementById("ad-head-title").innerHTML = title;
     } catch (err) {}
-}, 1000);
+}, 0);
  
 
 setTimeout(function(){
     $.getScript("https://alltay.github.io/blocks/slider.js");// Need to change on release
-}, 1700);
+}, 2000);
 
 setTimeout(function(){
     $( "#ad_sub_cat_widget" ).css( "overflow", "unset" )
