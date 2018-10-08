@@ -69,4 +69,4 @@ setTimeout(function(){
 
 setTimeout(function(){
     $.getScript("https://alltay.github.io/blocks/slider.js");// Need to change on release
-}, 1000);
+}, 1200);
