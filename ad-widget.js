@@ -28,7 +28,7 @@ if(document.getElementById('ad_item_widget')){
 function getParams(widget){
     var cat_id = $("#" + widget).attr("cat-id");
     var site_name = $("#" + widget).attr("site-name");
-    document.getElementById(widget).style.display = "none"; 
+    // document.getElementById(widget).style.display = "none"; 
     return [cat_id, site_name]
 }
 
@@ -49,27 +49,34 @@ var request = new XMLHttpRequest();
 }
 
 
-
 // Show widgets with latensy
-setTimeout(function(){
-    try {
-      document.getElementById('ad_sub_cat_widget').style.display = "block";
-      document.getElementById("ad-head-title").innerHTML = title;
-    } catch (err) {}
-    try {
-      document.getElementById('ad_cat_widget').style.display = "block";
-      document.getElementById("ad-head-title").innerHTML = title;
-    } catch (err) {}
-    try {
-      document.getElementById('ad_item_widget').style.display = "block";
-      document.getElementById("ad-head-title").innerHTML = title;
-    } catch (err) {}
-}, 0);
- 
 
 setTimeout(function(){
+    try {
+      document.getElementById("ad-head-title").innerHTML = title;
+    } catch (err) {}
+    try {
+      document.getElementById("ad-head-title").innerHTML = title;
+    } catch (err) {}
+    try {
+      document.getElementById("ad-head-title").innerHTML = title;
+    } catch (err) {}ы
+}, 200);
+
+
+setTimeout(function(){
+    try {
+      document.getElementById("ad-head-title").innerHTML = title;
+    } catch (err) {}
+    try {
+      document.getElementById("ad-head-title").innerHTML = title;
+    } catch (err) {}
+    try {
+      document.getElementById("ad-head-title").innerHTML = title;
+    } catch (err) {}
     $.getScript("https://alltay.github.io/blocks/slider.js");// Need to change on release
 }, 2000);
+
 
 setTimeout(function(){
     try {
