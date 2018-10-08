@@ -51,7 +51,7 @@ var request = new XMLHttpRequest();
 
 setTimeout(function(){
     $.getScript("https://alltay.github.io/blocks/slider.js");// Need to change on release
-}, 2000);
+}, 2500);
 
 
 // Show widgets with latensy
@@ -68,6 +68,6 @@ setTimeout(function(){
       document.getElementById('ad_item_widget').style.display = "block";
       document.getElementById("ad-head-title").innerHTML = title;
     } catch (err) {}
-}, 2000);
+}, 2500);
  
 
