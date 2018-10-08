@@ -70,3 +70,7 @@ setTimeout(function(){
 setTimeout(function(){
     $.getScript("https://alltay.github.io/blocks/slider.js");// Need to change on release
 }, 1700);
+
+setTimeout(function(){
+    $( "#ad_sub_cat_widget" ).css( "overflow", "unset" )
+}, 2000);
