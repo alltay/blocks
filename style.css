@@ -4,7 +4,7 @@ body {
 #ad_sub_cat_widget, #ad_cat_widget, #ad_item_widget {
     width: 625px;
     overflow: hidden;
-    max-height:155px;
+    max-height:150px;
 }
 .ad-item-title{
     height: 29px;
