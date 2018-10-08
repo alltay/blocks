@@ -1,6 +1,6 @@
 body {background-color:#640a01;}
 a{text-decoration:underline;}
-#ad_sub_cat_widget, #ad_cat_widget, #ad_item_widget {width:625px;overflow:hidden;max-height:140px;margin: 10px 0px 10px 25px;}
+#ad_sub_cat_widget, #ad_cat_widget, #ad_item_widget {width:625px;overflow:hidden;max-height:135px;margin: 10px 0px 10px 25px;}
 .ad-item-title{height: 29px;overflow:hidden;}
 .slick-prev.slick-arrow {background:url(https://alltay.github.io/blocks/left.png) no-repeat;height:55px;width:25px;opacity:.7;}
 .slick-next.slick-arrow{background:url(https://alltay.github.io/blocks/right.png) no-repeat;height:55px;width:25px;opacity:.7;}
