@@ -64,9 +64,9 @@ setTimeout(function(){
       document.getElementById('ad_item_widget').style.display = "block";
       document.getElementById("ad-head-title").innerHTML = title;
     } catch (err) {}
-}, 500);
+}, 700);
  
 
 setTimeout(function(){
     $.getScript("https://alltay.github.io/blocks/slider.js");// Need to change on release
-}, 1200);
+}, 1000);
