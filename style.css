@@ -2,7 +2,7 @@ body {
 	background-color: #640a01;
 }
 #ad_sub_cat_widget, #ad_cat_widget, #ad_item_widget {
-    max-width: 625px;
+    width: 625px;
 }
 .ad-item-title{
     height: 29px;
