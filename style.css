@@ -3,8 +3,10 @@ body {
 }
 #ad_sub_cat_widget, #ad_cat_widget, #ad_item_widget {
     width: 625px;
+}
+.row.main{
     overflow: hidden;
-    height:150px;
+    height:155px;
 }
 .ad-item-title{
     height: 29px;
