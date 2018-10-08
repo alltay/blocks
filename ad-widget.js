@@ -40,7 +40,7 @@ var request = new XMLHttpRequest();
             if (status == 200) {
                 document.getElementById(widget).innerHTML = request.responseText;
                 document.getElementById('ad-row-main').style.display = "none";
-                showWidget(title)
+                $( document ).ready(showWidget(title))
                 showArrows(widget)
             }
         }
@@ -52,16 +52,14 @@ var request = new XMLHttpRequest();
 
 // Show widgets with latency
 function showWidget(title){
-    setTimeout(function(){
-        document.getElementById("ad-head-title").innerHTML = title;
-        $.getScript("https://alltay.github.io/blocks/slider.js");
-        document.getElementById('ad-row-main').style.display = "block"; 
-    }, 300);
+    document.getElementById("ad-head-title").innerHTML = title;
+    $.getScript("https://alltay.github.io/blocks/slider.js");
+    document.getElementById('ad-row-main').style.display = "block"; 
 }
 
 function showArrows(widget){
     setTimeout(function(){
        $( "#" + widget ).css( "overflow", "unset" );
-    }, 700);
+    }, 300);
 }
     
