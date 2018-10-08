@@ -73,4 +73,4 @@ setTimeout(function(){
 
 setTimeout(function(){
     $( "#ad_sub_cat_widget" ).css( "overflow", "unset" )
-}, 2000);
+}, 2300);
