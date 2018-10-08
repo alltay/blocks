@@ -72,5 +72,14 @@ setTimeout(function(){
 }, 2000);
 
 setTimeout(function(){
-    $( "#ad_sub_cat_widget" ).css( "overflow", "unset" )
-}, 2300);
+    try {
+      $( "#ad_sub_cat_widget" ).css( "overflow", "unset" );
+    } catch (err) {}
+    try {
+      $( "#ad_cat_widget" ).css( "overflow", "unset" );
+    } catch (err) {}
+    try {
+      $( "#ad_item_widget" ).css( "overflow", "unset" );
+    } catch (err) {}
+    
+}, 2400);
