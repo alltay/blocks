@@ -38,6 +38,7 @@ var request = new XMLHttpRequest();
         if (request.readyState == 4) {
             var status = request.status;
             if (status == 200) {
+                $( "#" + widget ).css( "overflow", "hidden" );
                 document.getElementById(widget).innerHTML = request.responseText;
                 document.getElementById('ad-row-main').style.display = "none";
                 $( document ).ready(showWidget(title))
