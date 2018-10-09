@@ -56,10 +56,10 @@ function showWidget(title){
     $.getScript("https://alltay.github.io/blocks/slider.js");
     document.getElementById('ad-row-main').style.display = "block"; 
 }
-
+s
 function showArrows(widget){
     setTimeout(function(){
        $( "#" + widget ).css( "overflow", "visible" );
-    }, 300);
+    }, 600);
 }
     
