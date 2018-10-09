@@ -41,8 +41,8 @@ var request = new XMLHttpRequest();
                 // $( "#" + widget ).css( "overflow", "hidden" );
                 document.getElementById(widget).innerHTML = request.responseText;
                 document.getElementById('ad-row-main').style.display = "none";
-                // $( document ).ready(showWidget(title))
-                showArrows(widget)
+                $( document ).ready(showWidget(title))
+                // showArrows(widget)
             }
         }
     }
